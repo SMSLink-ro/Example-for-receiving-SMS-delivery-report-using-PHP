@@ -2,7 +2,7 @@
 
 /*
 
-  Receiving SMS delivery report using PHP
+  Receiving SMS Delivery Report using PHP
 
 */
 
