@@ -19,8 +19,8 @@ SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to 
 
 ## Optional Parameters of the Delivery Report
 
-- *network_id* the ID of the network in which the SMS was delivered, [see possible values here](https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html)
-- *network_type* the type of the network in which the SMS was delivered, [see possible values here](https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html)
+- *network_id* the ID of the network in which the SMS was delivered, see possible values for this parameter [here](https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html)
+- *network_type* the type of the network in which the SMS was delivered, see possible values for this parameter [here](https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html)
 - *delivery_report* the delivery report as received from the mobile network operator
       
 In order to receive these additional parameters, you should activate this feature as described in the documentation, at the Delivery Report chapter, subchapter 2, located [here](https://www.smslink.ro/sms-gateway-raportul-de-livrare-al-sms-ului-transmis-prin-sms-gateway.html).
