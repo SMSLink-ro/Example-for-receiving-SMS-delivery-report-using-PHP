@@ -1,6 +1,6 @@
 # Example for receiving SMS delivery report using PHP & SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK)
 
-This is an example for receiving SMS delivery report using [SMSLink.ro](https://www.smslink.ro) API, called [SMS Gateway](https://www.smslink.ro/sms-gateway.html). This example applies to all SMS Gateway methods, such as SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK)
+This is an example for receiving SMS delivery report using [SMSLink.ro](https://www.smslink.ro) API, called [SMS Gateway](https://www.smslink.ro/sms-gateway.html). This example applies to all SMS Gateway APIs, such as SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK)
 
 SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to more than 168 countries and more than 1000 mobile operators worldwide. 
 
@@ -8,16 +8,16 @@ SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to 
 
 1. Create an account on [SMSLink.ro](https://www.smslink.ro/inregistrare/)
 2. Create a SMS Gateway connection at [SMSLink.ro / SMS Gateway / Configuration & Settings](https://www.smslink.ro/sms/gateway/setup.php). Each SMS Gateway connection is a pair of Connection ID and Password. 
-3. Choose your desired SMS Gateway method for sending SMS, such as SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK).
-3. Configure a public URL endpoint where SMSLink.ro will send each delivery report in a GET request.
+3. Choose your desired SMS Gateway API for sending SMS, such as SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK).
+3. Configure a public URL endpoint where SMSLink.ro will send each delivery report in a HTTP(S) GET request.
 
-## Basic Parameters of the Delivery Report
+## Basic Parameters for the Delivery Report
 
 - *message_id* the unique message ID provided by SMS Gateway when sending the SMS
 - *status* 1 for Delivered SMS or 0 for Undelivered/Expired SMS
 - *timestamp* the UNIX timestamp of the delivery report
 
-## Optional Parameters of the Delivery Report
+## Optional Parameters for the Delivery Report
 
 - *network_id* the ID of the network in which the SMS was delivered, see possible values for this parameter [here](https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html)
 - *network_type* the type of the network in which the SMS was delivered, see possible values for this parameter [here](https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html)
