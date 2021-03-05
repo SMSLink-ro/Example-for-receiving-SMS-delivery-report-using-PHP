@@ -4,6 +4,11 @@
 
   Receiving SMS Delivery Report using PHP
 
+  This example illustrates receiving a Delivery Report for a SMS sent to a mobile subscriber using SMSLink SMS Gateway API,
+  SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK)
+  
+  This script should be availabile to a public URL using HTTP/HTTPS protocol and must accept HTTP(S) requests from SMSLink. 
+
 */
 
 if ((isset($_GET["message_id"])) and (isset($_GET["status"])) and (isset($_GET["timestamp"])))
@@ -40,8 +45,8 @@ if ((isset($_GET["message_id"])) and (isset($_GET["status"])) and (isset($_GET["
       network_type    - the type of the network in which the SMS was delivered
       delivery_report - the delivery report as received from the mobile network operator
       
-    In order to receive these additional parameters, you should activate this feature as described in the documentation, at the Delivery Report chapter, 
-    subchapter 2, located here: https://www.smslink.ro/content.php?content_id=126
+    In order to receive these additional parameters, you should activate this feature as described in the documentation, 
+    at the Delivery Report chapter, subchapter 2, located here: https://www.smslink.ro/content.php?content_id=126
 
   */
 
