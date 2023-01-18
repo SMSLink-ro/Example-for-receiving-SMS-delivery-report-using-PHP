@@ -9,7 +9,7 @@ SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to 
 1. Create an account on [SMSLink.ro](https://www.smslink.ro/inregistrare/)
 2. Create a SMS Gateway connection at [SMSLink.ro / SMS Gateway / Configuration & Settings](https://www.smslink.ro/sms/gateway/setup.php). Each SMS Gateway connection is a pair of Connection ID and Password. 
 3. Choose your desired SMS Gateway API for sending SMS, such as SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK).
-3. Configure a public URL endpoint where SMSLink.ro will send each delivery report in a HTTP(S) GET request.
+3. Configure a public URL endpoint where SMSLink.ro will send each delivery report in a HTTP(S) GET or POST request. Delivery Reports are sent by default as GET parameters, but you may choose between GET and POST parameters, by changing the coresponding setting in your SMSLink account.
 
 ## Basic Parameters for the Delivery Report
 
@@ -22,6 +22,8 @@ SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to 
 - *network_id* the ID of the network in which the SMS was delivered, see possible values for this parameter [here](https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html)
 - *network_type* the type of the network in which the SMS was delivered, see possible values for this parameter [here](https://www.smslink.ro/sms-gateway-documentatie-sms-gateway.html)
 - *delivery_report* the delivery report as received from the mobile network operator
+- *connection_id* the Connection ID which was used to send the SMS
+- *message_count* the count of SMS segments for the SMS (values can be 1 for a SMS up to 160 characters or a larger value for concatenated SMS, longer that 160 characters)
       
 In order to receive these additional parameters, you should activate this feature as described in the documentation, at the Delivery Report chapter, subchapter 2, located [here](https://www.smslink.ro/sms-gateway-raportul-de-livrare-al-sms-ului-transmis-prin-sms-gateway.html).
 

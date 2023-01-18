@@ -9,6 +9,9 @@
   
   This script should be availabile to a public URL using HTTP/HTTPS protocol and must accept HTTP(S) requests from SMSLink. 
 
+  Delivery Reports are sent by default as GET parameters, but you may choose between GET and POST parameters, by changing
+  the coresponding setting in your SMSLink account.
+
 */
 
 if ((isset($_GET["message_id"])) and (isset($_GET["status"])) and (isset($_GET["timestamp"])))
@@ -44,6 +47,9 @@ if ((isset($_GET["message_id"])) and (isset($_GET["status"])) and (isset($_GET["
       network_id      - the ID of the network in which the SMS was delivered
       network_type    - the type of the network in which the SMS was delivered
       delivery_report - the delivery report as received from the mobile network operator
+      connection_id   - the Connection ID which was used to send the SMS
+      message_count   - the count of SMS segments for the SMS (values can be 1 for a SMS up to 160 characters or a 
+                        larger value for concatenated SMS, longer that 160 characters)
       
     In order to receive these additional parameters, you should activate this feature as described in the documentation, 
     at the Delivery Report chapter, subchapter 2, located here: https://www.smslink.ro/content.php?content_id=126
