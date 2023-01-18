@@ -9,7 +9,7 @@ SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to 
 1. Create an account on [SMSLink.ro](https://www.smslink.ro/inregistrare/)
 2. Create a SMS Gateway connection at [SMSLink.ro / SMS Gateway / Configuration & Settings](https://www.smslink.ro/sms/gateway/setup.php). Each SMS Gateway connection is a pair of Connection ID and Password. 
 3. Choose your desired SMS Gateway API for sending SMS, such as SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK).
-3. Configure a public URL endpoint where SMSLink.ro will send each delivery report in a HTTP(S) GET or HTTPS(S) POST request. Delivery Reports parameters are sent by default as HTTPS(S) GET parameters, but you may choose between HTTPS(S) GET and HTTPS(S) POST parameters, by changing the coresponding setting in your SMSLink account.
+3. Configure a public URL endpoint where SMSLink.ro will send each delivery report in a HTTP(S) GET or HTTPS(S) POST request. Delivery Reports parameters are sent by default as HTTPS(S) GET parameters, but you may choose between HTTPS(S) GET and HTTPS(S) POST parameters, by changing the corresponding setting in your SMSLink account.
 
 ## Basic Parameters for the Delivery Report
 

@@ -10,7 +10,7 @@
   This script should be availabile to a public URL using HTTP/HTTPS protocol and must accept HTTP(S) requests from SMSLink. 
 
   Delivery Reports parameters are sent by default as HTTPS(S) GET parameters, but you may choose between HTTPS(S) GET and 
-  HTTPS(S) POST parameters, by changing the coresponding setting in your SMSLink account.
+  HTTPS(S) POST parameters, by changing the corresponding setting in your SMSLink account.
 
 */
 
